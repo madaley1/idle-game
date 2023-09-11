@@ -2,13 +2,22 @@ import React from 'react';
 
 import Layout from '@/components/Layout'
 
+import styles from '@/styles/pages/index.module.scss'
+import Clicker from '@/components/Clicker';
+
 const Home = () => {
   return(
     <Layout>
       <div
-        className='flex justify-center mt-10 items-center'
+        className={styles.home}
       >
-        <h1>The App</h1>
+        <div className={styles.clicker}>
+          <h3 className='text-center'>The Clicker</h3>
+          <Clicker />
+        </div>
+        <div className={styles.menu}>
+          <h3 className='text-center'>The Menu</h3>
+        </div>
 
       </div>
     </Layout>

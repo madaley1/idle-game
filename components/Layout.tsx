@@ -4,6 +4,9 @@ import React, {ReactNode} from "react";
 // next imports
 import Head from 'next/head';
 
+//style imports
+import styles from '@/styles/components/Layout.module.scss';
+
 //types
 type Props = {
   children: ReactNode;
@@ -15,11 +18,9 @@ const Layout: React.FC<Props> = (props) => {
     <Head>
       <title>Idle Game</title>
     </Head>
-    <div>
-      <div className="layout">
+      <div className={styles.layout}>
         {props.children}
       </div>
-    </div>
   </>
 )};
 
