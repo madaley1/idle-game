@@ -1,4 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+//library imports
 
-module.exports = nextConfig
+const nextConfig = (phase, { defaultConfig }) => {
+  return {
+    pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
+    env: {
+    },
+  };
+};
+
+module.exports = nextConfig;
