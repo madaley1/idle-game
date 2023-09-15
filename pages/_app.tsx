@@ -1,10 +1,16 @@
-import { AppProps } from "next/app";
-import '@/styles/global.scss'
+import { AppProps } from 'next/app';
+
+import { Provider } from 'react-redux';
+
+import store from '@/store';
+
+import '@/styles/global.scss';
 
 const App = ({ Component, pageProps }: AppProps) => {
-
   return (
-    <Component {...pageProps} />
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
   );
 };
 

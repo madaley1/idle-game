@@ -26,9 +26,11 @@
     }
   },
   "globals":{
-    "JSX": "readonly"
+    "JSX": "readonly",
+    "globalThis": false,
   },
   "rules": {
+    
     "prettier/prettier": [
       "error", 
       {
@@ -55,11 +57,10 @@
     "no-console": "warn",
     "no-undef": "error",
     "no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
     "semi": 2,
     "no-extra-semi": 2,
     "quotes": [2, "single", "avoid-escape"]
-    
-    // "indent": ["error", 2],
     
   },
   "overrides": [{
